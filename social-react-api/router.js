@@ -6,7 +6,7 @@ const cors = require("cors")
 
 apiRouter.use(cors())
 
-apiRouter.get("/", (req, res) => res.json("Hello, if you see this message that means your backend is up and running successfully. Congrats! Now let's continue learning React!"))
+apiRouter.get("/", (req, res) => res.json("Hello, if you see this message that means the backend api is up and running successfully!"))
 
 // check token to log out front-end if expired
 apiRouter.post("/checkToken", userController.checkToken)
